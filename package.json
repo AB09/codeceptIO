@@ -1,0 +1,24 @@
+{
+  "name": "codecept-puppetter",
+  "version": "1.0.0",
+  "description": "codeceptJS framework for E2E testing",
+  "main": "index.js",
+  "scripts": {
+    "codeceptjs": "./node_modules/.bin/codeceptjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AB09/codeceptIO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AB09/codeceptIO/issues"
+  },
+  "homepage": "https://github.com/AB09/codeceptIO#readme",
+  "dependencies": {
+    "codeceptjs": "^2.0.8",
+    "puppeteer": "^1.14.0"
+  }
+}
