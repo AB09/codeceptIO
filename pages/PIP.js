@@ -19,7 +19,7 @@ module.exports = {
   	addToRegs:"[data-automation='heart-icon']",
   	addToCart:"[data-automation='cta-button']",
   	findInStore:"[data-automation='find-in-store']"	
-  }
+  },
   
 
 
