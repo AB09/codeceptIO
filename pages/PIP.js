@@ -1,6 +1,9 @@
 const I = actor();
 const header = require('./gmHeader');
-
+const data = require('../testdata/data');
+const chai = require('chai');  
+const assert = chai.assert; 
+const recorder = require('codeceptjs').recorder;
 
 module.exports = {
 
@@ -33,13 +36,16 @@ module.exports = {
   	I.waitForVisible(this.productPrice);
   },
 
-  verifyCommonElements() {
+  async verifyCommonElements() {
+  	let productTitleText;
   	I.waitForVisible(this.productTitle);
   	I.waitForVisible(this.productDesc);
-  },
-
-  async getProductTitle() {
-  	return await I.grabTextFrom(this.productTitle);
+  	productTitleText = await I.grabTextFrom(this.productTitle);
+  	try {
+  		assert.equal(productTitleText,data.product.title,`FAIL: Product name mismatched`);
+  	}catch(e) {
+  		recorder.throw(e);
+  	}
   },
 
    verifyCartQuantity(expectedQty) {
