@@ -5,3 +5,9 @@ Feature('Testing item page');
 		pipPage.hasLoaded();
 		pipPage.verifyCommonElements();
 	});
+
+	Scenario.only('get product item title', (I, pipPage) => {
+		 pipPage.open();
+		 pipPage.addItemToCart();
+		 pipPage.getCartCountFromHeader();
+	});
