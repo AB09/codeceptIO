@@ -1,5 +1,6 @@
 const I = actor();
 const header = require('./gmHeader');
+const Objfullfilment = require('./fulfillment');
 const data = require('../testdata/data');
 const chai = require('chai');  
 const assert = chai.assert; 
@@ -26,7 +27,7 @@ module.exports = {
 
   itemAddedModal: "#modal-root",
   continueShoppingBtn: "[data-automation='continue-shopping']",
-
+  fulfillmentModal: Objfullfilment,
 
   open(skuId='conair-1875w-mid-size-hair-dryer/6000198160418') {
   	I.amOnPage(skuId);
