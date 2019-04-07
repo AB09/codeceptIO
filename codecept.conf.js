@@ -14,7 +14,7 @@ exports.config = {
   },
   plugins: {
     allure: {
-      enabled:true,
+      enabled:false,
     }
   },
   bootstrap: null,
