@@ -15,12 +15,11 @@ module.exports = {
 
 
   //cta buttons
-  
-  	addToRegs:"[data-automation='heart-icon']",
-  	addToCart:"[data-automation='cta-button']",
-  	findInStore:"[data-automation='find-in-store']"	,
-
-  
+	cta: {
+		addToRegs:"[data-automation='heart-icon']",
+  		addToCart:"[data-automation='cta-button']",
+  		findInStore:"[data-automation='find-in-store']"
+	}, 
 
   itemAddedModal: "#modal-root",
   continueShoppingBtn: "[data-automation='continue-shopping']",
@@ -49,8 +48,8 @@ module.exports = {
 
    async addItemToCart() {
   	this.hasLoaded();
-  	I.waitForEnabled(this.addToCart);
-  	I.click(this.addToCart);
+  	I.waitForEnabled(this.cta.addToCart);
+  	I.click(this.cta.addToCart);
   	await I.waitForElement(this.itemAddedModal);
   	//I.seeElement(this.continueShoppingBtn);
   	I.waitForEnabled(this.continueShoppingBtn);
