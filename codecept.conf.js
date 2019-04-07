@@ -6,7 +6,6 @@ exports.config = {
       url: 'https://www.walmart.ca/en/ip/',
       show: true,
       windowSize:'1680x1050',
-      // resizeWindow:'maximize'
     }
   },
   include: {
@@ -15,5 +14,6 @@ exports.config = {
   },
   bootstrap: null,
   mocha: {},
-  name: '.bin'
+  name: '.bin',
+  timeout:10000
 }
