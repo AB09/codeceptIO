@@ -9,5 +9,5 @@ Feature('Testing item page');
 	Scenario.only('get product item title', (I, pipPage) => {
 		 pipPage.open();
 		 pipPage.addItemToCart();
-		 pipPage.getCartCountFromHeader();
+		 pipPage.verifyCartQuantity(1);
 	});
