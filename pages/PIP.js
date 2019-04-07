@@ -53,6 +53,13 @@ module.exports = {
   	I.waitForElement(this.itemAddedModal);
    	I.waitForEnabled(this.continueShoppingBtn,5);
   	I.click(this.continueShoppingBtn);
-  }
+  },
+
+
+  increaseQtyBy(inputQty) {
+  	for (let i=1; i<=inputQty; i++) {
+  		 I.click(this.qtyIncreaseBtn);
+  	}
+  },
 
 }
