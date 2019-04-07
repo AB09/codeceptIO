@@ -1,5 +1,7 @@
 const I = actor();
 const header = require('./gmHeader');
+
+
 module.exports = {
 
   // insert your locators and methods here
@@ -12,9 +14,7 @@ module.exports = {
   qtyIncreaseBtn:"[data-automation='increase-qty']",
   qtyInputBox:"[data-automation='quantity'] input",
 
-
-
-  //cta buttons
+   //cta buttons
 	cta: {
 		addToRegs:"[data-automation='heart-icon']",
   		addToCart:"[data-automation='cta-button']",
@@ -39,20 +39,19 @@ module.exports = {
   },
 
   async getProductTitle() {
-  	console.log(`${await I.grabTextFrom(this.productTitle)}`);
+  	return await I.grabTextFrom(this.productTitle);
   },
 
-  getCartCountFromHeader() {
-  	header.getCartCount();
+   verifyCartQuantity(expectedQty) {
+  	header.verifyQuantity(expectedQty);	
   },
 
-   async addItemToCart() {
+   addItemToCart() {
   	this.hasLoaded();
   	I.waitForEnabled(this.cta.addToCart);
   	I.click(this.cta.addToCart);
-  	await I.waitForElement(this.itemAddedModal);
-  	//I.seeElement(this.continueShoppingBtn);
-  	I.waitForEnabled(this.continueShoppingBtn);
+  	I.waitForElement(this.itemAddedModal);
+   	I.waitForEnabled(this.continueShoppingBtn,5);
   	I.click(this.continueShoppingBtn);
   }
 
