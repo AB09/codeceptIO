@@ -12,6 +12,11 @@ exports.config = {
     I: './steps_file.js',
     pipPage: './pages/PIP.js'
   },
+  plugins: {
+    allure: {
+      enabled:true,
+    }
+  },
   bootstrap: null,
   mocha: {},
   name: '.bin',
