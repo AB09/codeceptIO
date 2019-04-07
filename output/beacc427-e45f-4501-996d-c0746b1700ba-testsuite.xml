@@ -1,0 +1,223 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1554662683872' stop='1554662719481'>
+    <name>Testing item page:</name>
+    <title>Testing item page:</title>
+    <test-cases>
+        <test-case start='1554662683874' status='passed' stop='1554662691836'>
+            <name>Verify static elements of item page</name>
+            <title>Verify static elements of item page</title>
+            <labels>
+                <label name='tag' value='null'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1554662691772' status='passed' stop='1554662691805'>
+                    <name>pipPage: hasLoaded </name>
+                    <title>pipPage: hasLoaded </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554662691773' status='passed' stop='1554662691804'>
+                            <name>I wait for visible "[data-automation='buybox-price']"</name>
+                            <title>I wait for visible "[data-automation='buybox-price']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554662691805' status='passed' stop='1554662691836'>
+                    <name>pipPage: verifyCommonElements </name>
+                    <title>pipPage: verifyCommonElements </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554662691805' status='passed' stop='1554662691821'>
+                            <name>I wait for visible "[data-automation='product-title']"</name>
+                            <title>I wait for visible "[data-automation='product-title']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554662691821' status='passed' stop='1554662691828'>
+                            <name>I wait for visible "[data-automation='short-description']"</name>
+                            <title>I wait for visible "[data-automation='short-description']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554662691828' status='passed' stop='1554662691835'>
+                            <name>I grab text from "[data-automation='product-title']"</name>
+                            <title>I grab text from "[data-automation='product-title']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1554662692231' status='passed' stop='1554662701815'>
+            <name>Add item to cart and verify quantity in cart</name>
+            <title>Add item to cart and verify quantity in cart</title>
+            <labels>
+                <label name='tag' value='null'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1554662700899' status='passed' stop='1554662700904'>
+                    <name>pipPage: hasLoaded </name>
+                    <title>pipPage: hasLoaded </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554662700899' status='passed' stop='1554662700904'>
+                            <name>I wait for visible "[data-automation='buybox-price']"</name>
+                            <title>I wait for visible "[data-automation='buybox-price']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554662700904' status='passed' stop='1554662701801'>
+                    <name>pipPage: addItemToCart </name>
+                    <title>pipPage: addItemToCart </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554662700904' status='passed' stop='1554662700907'>
+                            <name>I wait for enabled "[data-automation='cta-button']"</name>
+                            <title>I wait for enabled "[data-automation='cta-button']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554662700907' status='passed' stop='1554662701058'>
+                            <name>I click "[data-automation='cta-button']"</name>
+                            <title>I click "[data-automation='cta-button']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554662701058' status='passed' stop='1554662701063'>
+                            <name>I wait for element "#modal-root"</name>
+                            <title>I wait for element "#modal-root"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554662701063' status='passed' stop='1554662701670'>
+                            <name>I wait for enabled "[data-automation='continue-shopping']", 5</name>
+                            <title>I wait for enabled "[data-automation='continue-shopping']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554662701670' status='passed' stop='1554662701801'>
+                            <name>I click "[data-automation='continue-shopping']"</name>
+                            <title>I click "[data-automation='continue-shopping']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554662701801' status='passed' stop='1554662701815'>
+                    <name>Object: verifyQuantity </name>
+                    <title>Object: verifyQuantity </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554662701801' status='passed' stop='1554662701815'>
+                            <name>I grab text from "#nav-cart-mobile .nav-cart-count"</name>
+                            <title>I grab text from "#nav-cart-mobile .nav-cart-count"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1554662703038' status='passed' stop='1554662719219'>
+            <name>Increase quantity on item page and add item to cart</name>
+            <title>Increase quantity on item page and add item to cart</title>
+            <labels>
+                <label name='tag' value='null'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1554662717932' status='passed' stop='1554662718211'>
+                    <name>pipPage: increaseQtyBy </name>
+                    <title>pipPage: increaseQtyBy </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554662717932' status='passed' stop='1554662718074'>
+                            <name>I click "[data-automation='increase-qty']"</name>
+                            <title>I click "[data-automation='increase-qty']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554662718075' status='passed' stop='1554662718211'>
+                            <name>I click "[data-automation='increase-qty']"</name>
+                            <title>I click "[data-automation='increase-qty']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554662718211' status='passed' stop='1554662718243'>
+                    <name>pipPage: hasLoaded </name>
+                    <title>pipPage: hasLoaded </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554662718211' status='passed' stop='1554662718243'>
+                            <name>I wait for visible "[data-automation='buybox-price']"</name>
+                            <title>I wait for visible "[data-automation='buybox-price']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554662718243' status='passed' stop='1554662719212'>
+                    <name>pipPage: addItemToCart </name>
+                    <title>pipPage: addItemToCart </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554662718244' status='passed' stop='1554662718249'>
+                            <name>I wait for enabled "[data-automation='cta-button']"</name>
+                            <title>I wait for enabled "[data-automation='cta-button']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554662718249' status='passed' stop='1554662718428'>
+                            <name>I click "[data-automation='cta-button']"</name>
+                            <title>I click "[data-automation='cta-button']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554662718428' status='passed' stop='1554662718441'>
+                            <name>I wait for element "#modal-root"</name>
+                            <title>I wait for element "#modal-root"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554662718441' status='passed' stop='1554662719072'>
+                            <name>I wait for enabled "[data-automation='continue-shopping']", 5</name>
+                            <title>I wait for enabled "[data-automation='continue-shopping']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554662719072' status='passed' stop='1554662719212'>
+                            <name>I click "[data-automation='continue-shopping']"</name>
+                            <title>I click "[data-automation='continue-shopping']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554662719212' status='passed' stop='1554662719219'>
+                    <name>Object: verifyQuantity </name>
+                    <title>Object: verifyQuantity </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554662719212' status='passed' stop='1554662719218'>
+                            <name>I grab text from "#nav-cart-mobile .nav-cart-count"</name>
+                            <title>I grab text from "#nav-cart-mobile .nav-cart-count"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
