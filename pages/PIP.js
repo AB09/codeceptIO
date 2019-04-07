@@ -1,5 +1,5 @@
 const I = actor();
-
+const header = require('./gmHeader');
 module.exports = {
 
   // insert your locators and methods here
@@ -15,12 +15,15 @@ module.exports = {
 
 
   //cta buttons
-  cta:{
+  
   	addToRegs:"[data-automation='heart-icon']",
   	addToCart:"[data-automation='cta-button']",
-  	findInStore:"[data-automation='find-in-store']"	
-  },
+  	findInStore:"[data-automation='find-in-store']"	,
+
   
+
+  itemAddedModal: "#modal-root",
+  continueShoppingBtn: "[data-automation='continue-shopping']",
 
 
   open(skuId='conair-1875w-mid-size-hair-dryer/6000198160418') {
@@ -34,5 +37,24 @@ module.exports = {
   verifyCommonElements() {
   	I.waitForVisible(this.productTitle);
   	I.waitForVisible(this.productDesc);
+  },
+
+  async getProductTitle() {
+  	console.log(`${await I.grabTextFrom(this.productTitle)}`);
+  },
+
+  getCartCountFromHeader() {
+  	header.getCartCount();
+  },
+
+   async addItemToCart() {
+  	this.hasLoaded();
+  	I.waitForEnabled(this.addToCart);
+  	I.click(this.addToCart);
+  	await I.waitForElement(this.itemAddedModal);
+  	//I.seeElement(this.continueShoppingBtn);
+  	I.waitForEnabled(this.continueShoppingBtn);
+  	I.click(this.continueShoppingBtn);
   }
+
 }
