@@ -2,6 +2,7 @@ const I = actor();
 const chai = require('chai');  
 const assert = chai.assert; 
 const recorder = require('codeceptjs').recorder;
+const data = require('../testdata/data');
 
 module.exports = {
 
@@ -11,6 +12,7 @@ module.exports = {
   postalCodeInputPickup: "#pickup-section input",
   postalCodeUpdateBtnPickup: "#pickup-section button",
   pickupStoreElements: "#pickup-section div[class*='css-1yp4ln']",
+  pickupStoreInfoList: "#pickup-section div[class*='css-1yp4ln'] b",
    
   	async exandPickupTab() {
   		await I.click(this.pickUpTab);
@@ -31,9 +33,9 @@ module.exports = {
 
   async getFirstNearestLocation() {
   	let arr;
-  	 	arr=await I.grabTextFrom({xpath:"(//section[@id='pickup-section']//div[contains(@class,'css-1yp4ln')]//following::b)[1]"});
+  	 	arr=await I.grabTextFrom(this.pickupStoreInfoList);
   	try {
-  		assert.equal(arr,'Walmart Rexdale Supercentre',"'FAIL: Nearest store is not Walmart Rexdale Supercentre'");	
+  		assert.equal(arr[0],data.pickupStoresInfo.rexdale.name,"'FAIL: Nearest store is not Walmart Rexdale Supercentre'");	
   	} catch(e) {
   		recorder.throw(e);
   	}
