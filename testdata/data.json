@@ -3,6 +3,24 @@
 	"product": {
 		"title": "Conair 1875W Mid Size Hair Dryer",
 		"price": "$11.97"
+	},
+
+	"pickupStoresInfo": {
+		"rexdale": {
+			"name": "Walmart Rexdale Supercentre",
+			"distance": "4.68 km",
+			"cost"	: "FREE"
+		},
+		"malton": {
+			"name": "Walmart Malton Supercentre",
+			"distance": "5.09 km",
+			"cost"	: "FREE"
+		},
+		"woodbridge": {
+			"name": "Walmart Woodbridge Supercentre",
+			"distance": "5.29 km",
+			"cost"	: "FREE"
+		}
 	}
 
 }
