@@ -5,7 +5,9 @@ Before((pipPage) => {
   		pipPage.open();
 	});
 
-Scenario('Test Pickup tab', (pipPage) => {
+Scenario.only('Test Pickup tab', (pipPage) => {
 	pipPage.hasLoaded();
-	pipPage.fulfillmentModal.checkFreeBtn();
+	pipPage.fulfillmentModal.enterPostalCode();
+	pipPage.fulfillmentModal.verifyNearestStores();
+	pipPage.fulfillmentModal.getFirstNearestLocation();
 });
