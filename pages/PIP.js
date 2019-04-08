@@ -37,16 +37,10 @@ module.exports = {
   	I.waitForVisible(this.productPrice);
   },
 
-  async verifyCommonElements() {
-  	let productTitleText;
+  verifyCommonElements() {
   	I.waitForVisible(this.productTitle);
   	I.waitForVisible(this.productDesc);
-  	productTitleText = await I.grabTextFrom(this.productTitle);
-  	try {
-  		assert.equal(productTitleText,data.product.title,`FAIL: Product name mismatched`);
-  	}catch(e) {
-  		recorder.throw(e);
-  	}
+    I.see(data.product.title,{css:this.productTitle});
   },
 
    verifyCartQuantity(expectedQty) {
