@@ -10,7 +10,7 @@ Data(skuIdArr).Scenario('Test Pickup tab', (pipPage,current) => {
 	pipPage.open(current.skuID)
 	pipPage.hasLoaded();
 	pipPage.verifyCommonElements(current.prTitle);
-	pipPage.fulfillmentModal.enterPostalCode();
+	pipPage.fulfillmentModal.enterPostalCode('Pickup');
 	pipPage.fulfillmentModal.verifyNearestStores();
 	pipPage.fulfillmentModal.getFirstNearestLocation();
 }).tag('pickup').tag('pip');
@@ -19,6 +19,6 @@ Scenario('Test Shipping fees', (pipPage) => {
 	pipPage.open()
 	pipPage.hasLoaded();
 	pipPage.verifyCommonElements();
-	pipPage.fulfillmentModal.enterShippingPC();
+	pipPage.fulfillmentModal.enterPostalCode('Shipping');
 	pipPage.fulfillmentModal.verifyShippingFees();
 }).tag('shipping').tag('pip');
