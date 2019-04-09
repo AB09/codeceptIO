@@ -1,7 +1,7 @@
 # codeceptIO
 CodeceptJS repo for E2E testing 
 
-#Requirements
+**Requirements**
 NodeJS v 8.9 and higher required to start.
 
 #Setup framework
