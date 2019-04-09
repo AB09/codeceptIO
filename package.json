@@ -9,7 +9,7 @@
     "gen-allure": "allure serve output",
     "test-with-tags": "codeceptjs run --grep",
     "all-pip-test":"codeceptjs run --grep @pip",
-    "test-parallel": "codeceptjs run-multiple parallel"
+    "tests-parallel": "codeceptjs run-multiple parallel"
   },
   "repository": {
     "type": "git",
