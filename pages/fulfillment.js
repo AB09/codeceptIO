@@ -27,8 +27,8 @@ module.exports = {
   },
 
   async verifyNearestStores() {
-  	I.waitForElement(this.pickupStoreElements,10);
-  	await I.seeNumberOfVisibleElements(this.pickupStoreElements, 3);
+  	I.waitForVisible(this.pickupStoreElements,5);
+  	await I.retry({ retries: 2, minTimeout: 10000 }).seeNumberOfVisibleElements(this.pickupStoreElements, 3);
   },
 
   async getFirstNearestLocation() {
