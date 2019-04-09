@@ -39,6 +39,13 @@
 		"sku": "6000193213529",
 		"title": "Weider Treadmill Cleaning Accessory Kit",
 		"price": "$34.99"
+	},
+
+	"shippingType": {
+		"standard" : {
+			"label": "STANDARD",
+			"cost": "$5.97"	
+		}
 	}
 
 }
