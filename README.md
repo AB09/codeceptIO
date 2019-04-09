@@ -10,6 +10,8 @@ NodeJS v 8.9 and higher required to start.
 
 #Execution 
 1. run `npm test` to execute test on local machine. It will execute on default URL mentioned in assignment. 
+2. To execute test by `@tag` name run `npm run test-with-tags` followed by `@tagname`.
+3. To execute all test related to `item page`, run `npm run all-pip-test`.
 
 #Report - Allure 
 To create allure report perform below steps. 
