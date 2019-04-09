@@ -1,0 +1,421 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1554772134002' stop='1554772180030'>
+    <name>Pickup and Shipping options:</name>
+    <title>Pickup and Shipping options:</title>
+    <test-cases>
+        <test-case start='1554772134004' status='passed' stop='1554772149949'>
+            <name>Test Pickup tab | {"skuID":"127191","prTitle":"Gold's Gym Treadmill Lubricant"}</name>
+            <title>Test Pickup tab | {"skuID":"127191","prTitle":"Gold's Gym Treadmill Lubricant"}</title>
+            <labels>
+                <label name='tag' value='null'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1554772137623' status='passed' stop='1554772142799'>
+                    <name>pipPage: open </name>
+                    <title>pipPage: open </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772137623' status='passed' stop='1554772142799'>
+                            <name>I am on page "127191"</name>
+                            <title>I am on page "127191"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554772142799' status='passed' stop='1554772143326'>
+                    <name>pipPage: hasLoaded </name>
+                    <title>pipPage: hasLoaded </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772142799' status='passed' stop='1554772143326'>
+                            <name>I wait for visible "[data-automation='buybox-price']"</name>
+                            <title>I wait for visible "[data-automation='buybox-price']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554772143326' status='passed' stop='1554772144863'>
+                    <name>pipPage: verifyCommonElements </name>
+                    <title>pipPage: verifyCommonElements </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772143326' status='passed' stop='1554772143851'>
+                            <name>I wait for visible "[data-automation='product-title']"</name>
+                            <title>I wait for visible "[data-automation='product-title']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554772143851' status='passed' stop='1554772144340'>
+                            <name>I wait for visible "[data-automation='short-description']"</name>
+                            <title>I wait for visible "[data-automation='short-description']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554772144340' status='passed' stop='1554772144863'>
+                            <name>I see "Gold's Gym Treadmill Lubricant", {"css":"[data-automation='product-title']"}</name>
+                            <title>I see "Gold's Gym Treadmill Lubricant", {"css":"[data-automation='product-title']"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554772144863' status='passed' stop='1554772145474'>
+                    <name>Object: exandPickupTab </name>
+                    <title>Object: exandPickupTab </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772144863' status='passed' stop='1554772145474'>
+                            <name>I click "#pickup-section"</name>
+                            <title>I click "#pickup-section"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554772145474' status='passed' stop='1554772148346'>
+                    <name>Object: enterPostalCode </name>
+                    <title>Object: enterPostalCode </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772145474' status='passed' stop='1554772145981'>
+                            <name>I wait for visible "#pickup-section input"</name>
+                            <title>I wait for visible "#pickup-section input"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554772145981' status='passed' stop='1554772147216'>
+                            <name>I fill field "#pickup-section input", "M9V3G4"</name>
+                            <title>I fill field "#pickup-section input", "M9V3G4"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554772147216' status='passed' stop='1554772147686'>
+                            <name>I wait for enabled "#pickup-section button"</name>
+                            <title>I wait for enabled "#pickup-section button"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554772147686' status='passed' stop='1554772148346'>
+                            <name>I click "#pickup-section button"</name>
+                            <title>I click "#pickup-section button"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554772148346' status='passed' stop='1554772149468'>
+                    <name>Object: verifyNearestStores </name>
+                    <title>Object: verifyNearestStores </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772148346' status='passed' stop='1554772149009'>
+                            <name>I wait for visible "#pickup-section div[class*='css-1yp4ln']", 5</name>
+                            <title>I wait for visible "#pickup-section div[class*='css-1yp4ln']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554772149009' status='passed' stop='1554772149468'>
+                            <name>I see number of visible elements "#pickup-section div[class*='css-1yp4ln']", 3</name>
+                            <title>I see number of visible elements "#pickup-section div[class*='css-1yp4ln']", 3</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554772149468' status='passed' stop='1554772149949'>
+                    <name>Object: getFirstNearestLocation </name>
+                    <title>Object: getFirstNearestLocation </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772149468' status='passed' stop='1554772149948'>
+                            <name>I grab text from "#pickup-section div[class*='css-1yp4ln'] b"</name>
+                            <title>I grab text from "#pickup-section div[class*='css-1yp4ln'] b"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1554772150320' status='passed' stop='1554772165346'>
+            <name>Test Pickup tab | {"skuID":"6000054849496","prTitle":"Conair 1600Watt Compact Size Dual Voltage Travel Folding Handle Hair Dryer"}</name>
+            <title>Test Pickup tab | {"skuID":"6000054849496","prTitle":"Conair 1600Watt Compact Size Dual Voltage Travel Folding Handle Hair Dryer"}</title>
+            <labels>
+                <label name='tag' value='null'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1554772152530' status='passed' stop='1554772157309'>
+                    <name>pipPage: open </name>
+                    <title>pipPage: open </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772152530' status='passed' stop='1554772157309'>
+                            <name>I am on page "6000054849496"</name>
+                            <title>I am on page "6000054849496"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554772157309' status='passed' stop='1554772157822'>
+                    <name>pipPage: hasLoaded </name>
+                    <title>pipPage: hasLoaded </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772157309' status='passed' stop='1554772157822'>
+                            <name>I wait for visible "[data-automation='buybox-price']"</name>
+                            <title>I wait for visible "[data-automation='buybox-price']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554772157822' status='passed' stop='1554772159271'>
+                    <name>pipPage: verifyCommonElements </name>
+                    <title>pipPage: verifyCommonElements </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772157822' status='passed' stop='1554772158290'>
+                            <name>I wait for visible "[data-automation='product-title']"</name>
+                            <title>I wait for visible "[data-automation='product-title']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554772158290' status='passed' stop='1554772158773'>
+                            <name>I wait for visible "[data-automation='short-description']"</name>
+                            <title>I wait for visible "[data-automation='short-description']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554772158773' status='passed' stop='1554772159271'>
+                            <name>I see "Conair 1600Watt Compact Size Dual Voltage Travel Folding Handle Hair Dryer", {"css":"[data-automation='product-title']"}</name>
+                            <title>I see "Conair 1600Watt Compact Size Dual Voltage Travel Folding Handle Hair Dryer", {"css":"[data-automation='product-title']"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554772159271' status='passed' stop='1554772159996'>
+                    <name>Object: exandPickupTab </name>
+                    <title>Object: exandPickupTab </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772159271' status='passed' stop='1554772159996'>
+                            <name>I click "#pickup-section"</name>
+                            <title>I click "#pickup-section"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554772159996' status='passed' stop='1554772163520'>
+                    <name>Object: enterPostalCode </name>
+                    <title>Object: enterPostalCode </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772159996' status='passed' stop='1554772161689'>
+                            <name>I wait for visible "#pickup-section input"</name>
+                            <title>I wait for visible "#pickup-section input"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554772161689' status='passed' stop='1554772162425'>
+                            <name>I fill field "#pickup-section input", "M9V3G4"</name>
+                            <title>I fill field "#pickup-section input", "M9V3G4"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554772162425' status='passed' stop='1554772162911'>
+                            <name>I wait for enabled "#pickup-section button"</name>
+                            <title>I wait for enabled "#pickup-section button"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554772162911' status='passed' stop='1554772163520'>
+                            <name>I click "#pickup-section button"</name>
+                            <title>I click "#pickup-section button"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554772163520' status='passed' stop='1554772164842'>
+                    <name>Object: verifyNearestStores </name>
+                    <title>Object: verifyNearestStores </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772163520' status='passed' stop='1554772164344'>
+                            <name>I wait for visible "#pickup-section div[class*='css-1yp4ln']", 5</name>
+                            <title>I wait for visible "#pickup-section div[class*='css-1yp4ln']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554772164344' status='passed' stop='1554772164842'>
+                            <name>I see number of visible elements "#pickup-section div[class*='css-1yp4ln']", 3</name>
+                            <title>I see number of visible elements "#pickup-section div[class*='css-1yp4ln']", 3</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554772164842' status='passed' stop='1554772165346'>
+                    <name>Object: getFirstNearestLocation </name>
+                    <title>Object: getFirstNearestLocation </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772164842' status='passed' stop='1554772165346'>
+                            <name>I grab text from "#pickup-section div[class*='css-1yp4ln'] b"</name>
+                            <title>I grab text from "#pickup-section div[class*='css-1yp4ln'] b"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1554772165721' status='passed' stop='1554772179491'>
+            <name>Test Pickup tab | {"skuID":"6000193213529","prTitle":"Weider Treadmill Cleaning Accessory Kit"}</name>
+            <title>Test Pickup tab | {"skuID":"6000193213529","prTitle":"Weider Treadmill Cleaning Accessory Kit"}</title>
+            <labels>
+                <label name='tag' value='null'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1554772167294' status='passed' stop='1554772172647'>
+                    <name>pipPage: open </name>
+                    <title>pipPage: open </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772167294' status='passed' stop='1554772172647'>
+                            <name>I am on page "6000193213529"</name>
+                            <title>I am on page "6000193213529"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554772172647' status='passed' stop='1554772173144'>
+                    <name>pipPage: hasLoaded </name>
+                    <title>pipPage: hasLoaded </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772172647' status='passed' stop='1554772173144'>
+                            <name>I wait for visible "[data-automation='buybox-price']"</name>
+                            <title>I wait for visible "[data-automation='buybox-price']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554772173144' status='passed' stop='1554772174614'>
+                    <name>pipPage: verifyCommonElements </name>
+                    <title>pipPage: verifyCommonElements </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772173144' status='passed' stop='1554772173658'>
+                            <name>I wait for visible "[data-automation='product-title']"</name>
+                            <title>I wait for visible "[data-automation='product-title']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554772173658' status='passed' stop='1554772174127'>
+                            <name>I wait for visible "[data-automation='short-description']"</name>
+                            <title>I wait for visible "[data-automation='short-description']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554772174127' status='passed' stop='1554772174614'>
+                            <name>I see "Weider Treadmill Cleaning Accessory Kit", {"css":"[data-automation='product-title']"}</name>
+                            <title>I see "Weider Treadmill Cleaning Accessory Kit", {"css":"[data-automation='product-title']"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554772174614' status='passed' stop='1554772175230'>
+                    <name>Object: exandPickupTab </name>
+                    <title>Object: exandPickupTab </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772174614' status='passed' stop='1554772175230'>
+                            <name>I click "#pickup-section"</name>
+                            <title>I click "#pickup-section"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554772175230' status='passed' stop='1554772177885'>
+                    <name>Object: enterPostalCode </name>
+                    <title>Object: enterPostalCode </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772175231' status='passed' stop='1554772175752'>
+                            <name>I wait for visible "#pickup-section input"</name>
+                            <title>I wait for visible "#pickup-section input"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554772175752' status='passed' stop='1554772176731'>
+                            <name>I fill field "#pickup-section input", "M9V3G4"</name>
+                            <title>I fill field "#pickup-section input", "M9V3G4"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554772176731' status='passed' stop='1554772177172'>
+                            <name>I wait for enabled "#pickup-section button"</name>
+                            <title>I wait for enabled "#pickup-section button"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554772177172' status='passed' stop='1554772177885'>
+                            <name>I click "#pickup-section button"</name>
+                            <title>I click "#pickup-section button"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554772177885' status='passed' stop='1554772179013'>
+                    <name>Object: verifyNearestStores </name>
+                    <title>Object: verifyNearestStores </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772177885' status='passed' stop='1554772178558'>
+                            <name>I wait for visible "#pickup-section div[class*='css-1yp4ln']", 5</name>
+                            <title>I wait for visible "#pickup-section div[class*='css-1yp4ln']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554772178558' status='passed' stop='1554772179013'>
+                            <name>I see number of visible elements "#pickup-section div[class*='css-1yp4ln']", 3</name>
+                            <title>I see number of visible elements "#pickup-section div[class*='css-1yp4ln']", 3</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554772179013' status='passed' stop='1554772179491'>
+                    <name>Object: getFirstNearestLocation </name>
+                    <title>Object: getFirstNearestLocation </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554772179013' status='passed' stop='1554772179491'>
+                            <name>I grab text from "#pickup-section div[class*='css-1yp4ln'] b"</name>
+                            <title>I grab text from "#pickup-section div[class*='css-1yp4ln'] b"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
