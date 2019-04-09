@@ -21,6 +21,24 @@
 			"distance": "5.29 km",
 			"cost"	: "FREE"
 		}
+	},
+
+	"item1": {
+		"sku": "127191",
+		"title": "Gold's Gym Treadmill Lubricant",
+		"price": "$8.98"
+	},
+
+	"item2": {
+		"sku": "6000054849496",
+		"title": "Conair 1600Watt Compact Size Dual Voltage Travel Folding Handle Hair Dryer",
+		"price": "$9.96"
+	},
+
+	"item3": {
+		"sku": "6000193213529",
+		"title": "Weider Treadmill Cleaning Accessory Kit",
+		"price": "$34.99"
 	}
 
 }
