@@ -7,7 +7,7 @@
     "codeceptjs": "./node_modules/.bin/codeceptjs",
     "test": "codeceptjs run",
     "gen-allure": "allure serve output",
-    "with-tags": "codeceptjs run --grep",
+    "test-with-tags": "codeceptjs run --grep",
     "all-pip-test":"codeceptjs run --grep @pip"
   },
   "repository": {
