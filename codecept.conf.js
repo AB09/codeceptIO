@@ -15,7 +15,13 @@ exports.config = {
   plugins: {
     allure: {
       enabled:false,
-    }
+      outputDir: './output/reports/allure/',
+    },
+    stepByStepReport: {
+     enabled: false,
+     deleteSuccessful:false,
+     output:'./output/reports/slideshow/',
+   }
   },
   bootstrap: null,
   mocha: {},
