@@ -14,3 +14,11 @@ Data(skuIdArr).Scenario('Test Pickup tab', (pipPage,current) => {
 	pipPage.fulfillmentModal.verifyNearestStores();
 	pipPage.fulfillmentModal.getFirstNearestLocation();
 }).tag('pickup').tag('pip');
+
+Scenario('Test Shipping fees', (pipPage) => {
+	pipPage.open()
+	pipPage.hasLoaded();
+	pipPage.verifyCommonElements();
+	pipPage.fulfillmentModal.enterShippingPC();
+	pipPage.fulfillmentModal.verifyShippingFees();
+}).tag('shipping').tag('pip');
