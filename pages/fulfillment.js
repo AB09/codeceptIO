@@ -22,12 +22,24 @@ module.exports = {
   		await I.click(this.pickUpTab);
   	},
 
-  async enterPostalCode(pc="M9V3G4") {
-  	this.exandPickupTab();
-  	I.waitForVisible(this.postalCodeInputPickup);
-  	I.fillField(this.postalCodeInputPickup, pc);
-  	I.waitForEnabled(this.postalCodeUpdateBtnPickup);
-  	await I.click(this.postalCodeUpdateBtnPickup);
+  async enterPostalCode(section='Pickup', pc="M9V3G4") {
+  	let elemPCInput, elemPCUpdateBtn; 
+  	switch (section) {
+  		case "Pickup":
+  			this.exandPickupTab();
+  			elemPCInput = this.postalCodeInputPickup;
+  			elemPCUpdateBtn = this.postalCodeUpdateBtnPickup;
+  		break;
+  		case "Shipping":
+			this.exandShippingTab();
+		  	elemPCInput = this.pcInputShippingTab;
+  			elemPCUpdateBtn = this.pcUpdateBtnShippingTab;		
+  		break;
+  	}
+  	I.waitForVisible(elemPCInput);
+  	I.fillField(elemPCInput, pc);
+  	I.waitForEnabled(elemPCUpdateBtn);
+  	await I.click(elemPCUpdateBtn);
   },
 
   async verifyNearestStores() {
@@ -49,13 +61,6 @@ module.exports = {
 		I.click(this.shippingTab);
 	},
 
-	async enterShippingPC(pc="M9V3G4") {
-		this.exandShippingTab();
-		I.waitForVisible(this.pcInputShippingTab);
-		I.fillField(this.pcInputShippingTab,pc);
-		I.waitForEnabled(this.pcUpdateBtnShippingTab);
-		await I.click(this.pcUpdateBtnShippingTab);
-	},
 	async verifyShippingFees(cost=data.shippingType.standard.cost) {
 		let shippingType, shippingFee;
 		I.retry({ retries: 2, minTimeout: 10000 }).waitForVisible(this.shippingTypeText);
