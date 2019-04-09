@@ -23,6 +23,11 @@ exports.config = {
      output:'./output/reports/slideshow/',
    }
   },
+  multiple: {
+    parallel: {
+      chunks: 2
+    }
+  },
   bootstrap: null,
   mocha: {},
   timeout:10000
