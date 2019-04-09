@@ -25,6 +25,5 @@ exports.config = {
   },
   bootstrap: null,
   mocha: {},
-  name: '.bin',
   timeout:10000
 }
