@@ -13,4 +13,4 @@ Data(skuIdArr).Scenario('Test Pickup tab', (pipPage,current) => {
 	pipPage.fulfillmentModal.enterPostalCode();
 	pipPage.fulfillmentModal.verifyNearestStores();
 	pipPage.fulfillmentModal.getFirstNearestLocation();
-});
+}).tag('pickup').tag('pip');
