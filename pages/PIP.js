@@ -37,10 +37,10 @@ module.exports = {
   	I.waitForVisible(this.productPrice);
   },
 
-  verifyCommonElements() {
+  verifyCommonElements(productTitle=data.product.title) {
   	I.waitForVisible(this.productTitle);
   	I.waitForVisible(this.productDesc);
-    I.see(data.product.title,{css:this.productTitle});
+    I.see(productTitle,{css:this.productTitle});
   },
 
    verifyCartQuantity(expectedQty) {
