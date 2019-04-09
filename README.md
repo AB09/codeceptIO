@@ -24,3 +24,9 @@ To create step by step report for a test, perform below steps.
 2. Run your test using `npm test` which will create screenshot for each step. Later, screenshots are 
 combined into slideshow. By default, reports are only generated for failed test. 
 3. To generate slideshow for passed test, in `codecept.conf.js` change to `deleteSuccessful:true`.
+
+**Parallel Execution**
+1. To run several test file in parallel, enabled multiple run in codecept.conf.js
+2. Number of `chunks` will tell the test runner to run certain number suits in parallel. 
+3. Run your test in parallel by running `npm run "tests-parallel` and it will trigger parallel execution with `chunks` value set to `2`.
+
