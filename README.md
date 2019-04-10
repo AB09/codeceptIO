@@ -31,3 +31,10 @@ combined into slideshow. By default, reports are only generated for failed test.
 2. Number of `chunks` will tell the test runner to run certain number suits in parallel. 
 3. Run your test in parallel by running `npm run "tests-parallel` and it will trigger parallel execution with `chunks` value set to `2`.
 
+
+**ISSUES**
+1. Step by step report are not being generated if user provides custom output directory
+2. Using Node assertion library inside try-catch block does show failure message when assertion
+fails. However, it marks the scenario as passed. 
+3. Need to understand the implementation of decrease quantity button on PIP page. 
+
