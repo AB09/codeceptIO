@@ -6,7 +6,7 @@
   "scripts": {
     "codeceptjs": "./node_modules/.bin/codeceptjs",
     "test": "codeceptjs run",
-    "gen-allure": "allure serve output",
+    "gen-allure": "allure serve output/reports/allure",
     "test-with-tags": "codeceptjs run --grep",
     "all-pip-test":"codeceptjs run --grep @pip",
     "tests-parallel": "codeceptjs run-multiple parallel"
