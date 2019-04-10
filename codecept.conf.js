@@ -18,7 +18,7 @@ exports.config = {
       outputDir: './output/reports/allure/',
     },
     stepByStepReport: {
-     enabled: false,
+     enabled: true,
      deleteSuccessful:false,
      //output:'./output/reports',
    }
