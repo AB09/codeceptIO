@@ -1,0 +1,131 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1554866074773' stop='1554866136028'>
+    <name>Verification of add to cart for avaiable/unavailable variant:</name>
+    <title>Verification of add to cart for avaiable/unavailable variant:</title>
+    <test-cases>
+        <test-case start='1554866074773' status='passed' stop='1554866109591'>
+            <name>Try to add available variant item</name>
+            <title>Try to add available variant item</title>
+            <labels>
+                <label name='tag' value='null'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1554866104945' status='passed' stop='1554866105676'>
+                    <name>Object: addAvailableVariant </name>
+                    <title>Object: addAvailableVariant </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554866104945' status='passed' stop='1554866105676'>
+                            <name>I click {xpath: //div[contains(@class,'css-1rh880d')]//button[not(contains(@aria-label,'not available'))][position()=1]}</name>
+                            <title>I click {xpath: //div[contains(@class,'css-1rh880d')]//button[not(contains(@aria-label,'not available'))][position()=1]}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554866105676' status='passed' stop='1554866106193'>
+                    <name>pipPage: hasLoaded </name>
+                    <title>pipPage: hasLoaded </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554866105676' status='passed' stop='1554866106193'>
+                            <name>I wait for visible "[data-automation='buybox-price']"</name>
+                            <title>I wait for visible "[data-automation='buybox-price']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554866106193' status='passed' stop='1554866109076'>
+                    <name>pipPage: addItemToCart </name>
+                    <title>pipPage: addItemToCart </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554866106193' status='passed' stop='1554866106704'>
+                            <name>I wait for enabled "[data-automation='cta-button']"</name>
+                            <title>I wait for enabled "[data-automation='cta-button']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554866106704' status='passed' stop='1554866107370'>
+                            <name>I click "[data-automation='cta-button']"</name>
+                            <title>I click "[data-automation='cta-button']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554866107370' status='passed' stop='1554866107867'>
+                            <name>I wait for element "#modal-root"</name>
+                            <title>I wait for element "#modal-root"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554866107868' status='passed' stop='1554866108391'>
+                            <name>I wait for enabled "[data-automation='continue-shopping']", 5</name>
+                            <title>I wait for enabled "[data-automation='continue-shopping']", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554866108391' status='passed' stop='1554866109076'>
+                            <name>I click "[data-automation='continue-shopping']"</name>
+                            <title>I click "[data-automation='continue-shopping']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554866109076' status='passed' stop='1554866109591'>
+                    <name>Object: verifyQuantity </name>
+                    <title>Object: verifyQuantity </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554866109076' status='passed' stop='1554866109591'>
+                            <name>I see 1, {"css":"#nav-cart-mobile .nav-cart-count"}</name>
+                            <title>I see 1, {"css":"#nav-cart-mobile .nav-cart-count"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1554866109952' status='passed' stop='1554866135665'>
+            <name>Try to add unavailable variant item</name>
+            <title>Try to add unavailable variant item</title>
+            <labels>
+                <label name='tag' value='null'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1554866134391' status='passed' stop='1554866135146'>
+                    <name>Object: addUnavailableVariant </name>
+                    <title>Object: addUnavailableVariant </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554866134391' status='passed' stop='1554866135146'>
+                            <name>I click {xpath: .//*[./@role = 'listbox']//button[substring(./@aria-label, string-length(./@aria-label) - string-length('not available') + 1, string-length(./@aria-label)) = 'not available'][position()=1]}</name>
+                            <title>I click {xpath: .//*[./@role = 'listbox']//button[substring(./@aria-label, string-length(./@aria-label) - string-length('not available') + 1, string-length(./@aria-label)) = 'not available'][position()=1]}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554866135146' status='passed' stop='1554866135665'>
+                    <name>pipPage: addUnavailableVariantItem </name>
+                    <title>pipPage: addUnavailableVariantItem </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554866135146' status='passed' stop='1554866135665'>
+                            <name>I dont see element {xpath: .//*[./@data-automation = 'cta-button'][contains(., 'Add to cart')]}</name>
+                            <title>I dont see element {xpath: .//*[./@data-automation = 'cta-button'][contains(., 'Add to cart')]}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

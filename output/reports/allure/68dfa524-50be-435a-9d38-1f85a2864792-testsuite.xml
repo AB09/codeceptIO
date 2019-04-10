@@ -1,22 +1,24 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1554772134002' stop='1554772180030'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1554865925815' stop='1554866019254'>
     <name>Pickup and Shipping options:</name>
     <title>Pickup and Shipping options:</title>
     <test-cases>
-        <test-case start='1554772134004' status='passed' stop='1554772149949'>
-            <name>Test Pickup tab | {"skuID":"127191","prTitle":"Gold's Gym Treadmill Lubricant"}</name>
-            <title>Test Pickup tab | {"skuID":"127191","prTitle":"Gold's Gym Treadmill Lubricant"}</title>
+        <test-case start='1554865925817' status='passed' stop='1554865948736'>
+            <name>Test Pickup tab | {"skuID":"127191","prTitle":"Gold's Gym Treadmill Lubricant"} @pickup @pip</name>
+            <title>Test Pickup tab | {"skuID":"127191","prTitle":"Gold's Gym Treadmill Lubricant"} @pickup @pip</title>
             <labels>
                 <label name='tag' value='null'/>
+                <label name='tag' value='@pickup'/>
+                <label name='tag' value='@pip'/>
             </labels>
             <parameters/>
             <steps>
-                <step start='1554772137623' status='passed' stop='1554772142799'>
+                <step start='1554865929117' status='passed' stop='1554865941618'>
                     <name>pipPage: open </name>
                     <title>pipPage: open </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772137623' status='passed' stop='1554772142799'>
+                        <step start='1554865929118' status='passed' stop='1554865941618'>
                             <name>I am on page "127191"</name>
                             <title>I am on page "127191"</title>
                             <attachments/>
@@ -24,12 +26,12 @@
                         </step>
                     </steps>
                 </step>
-                <step start='1554772142799' status='passed' stop='1554772143326'>
+                <step start='1554865941618' status='passed' stop='1554865942135'>
                     <name>pipPage: hasLoaded </name>
                     <title>pipPage: hasLoaded </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772142799' status='passed' stop='1554772143326'>
+                        <step start='1554865941618' status='passed' stop='1554865942135'>
                             <name>I wait for visible "[data-automation='buybox-price']"</name>
                             <title>I wait for visible "[data-automation='buybox-price']"</title>
                             <attachments/>
@@ -37,24 +39,24 @@
                         </step>
                     </steps>
                 </step>
-                <step start='1554772143326' status='passed' stop='1554772144863'>
+                <step start='1554865942135' status='passed' stop='1554865943640'>
                     <name>pipPage: verifyCommonElements </name>
                     <title>pipPage: verifyCommonElements </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772143326' status='passed' stop='1554772143851'>
+                        <step start='1554865942135' status='passed' stop='1554865942652'>
                             <name>I wait for visible "[data-automation='product-title']"</name>
                             <title>I wait for visible "[data-automation='product-title']"</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1554772143851' status='passed' stop='1554772144340'>
+                        <step start='1554865942652' status='passed' stop='1554865943157'>
                             <name>I wait for visible "[data-automation='short-description']"</name>
                             <title>I wait for visible "[data-automation='short-description']"</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1554772144340' status='passed' stop='1554772144863'>
+                        <step start='1554865943157' status='passed' stop='1554865943640'>
                             <name>I see "Gold's Gym Treadmill Lubricant", {"css":"[data-automation='product-title']"}</name>
                             <title>I see "Gold's Gym Treadmill Lubricant", {"css":"[data-automation='product-title']"}</title>
                             <attachments/>
@@ -62,12 +64,12 @@
                         </step>
                     </steps>
                 </step>
-                <step start='1554772144863' status='passed' stop='1554772145474'>
+                <step start='1554865943640' status='passed' stop='1554865944271'>
                     <name>Object: exandPickupTab </name>
                     <title>Object: exandPickupTab </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772144863' status='passed' stop='1554772145474'>
+                        <step start='1554865943640' status='passed' stop='1554865944270'>
                             <name>I click "#pickup-section"</name>
                             <title>I click "#pickup-section"</title>
                             <attachments/>
@@ -75,49 +77,49 @@
                         </step>
                     </steps>
                 </step>
-                <step start='1554772145474' status='passed' stop='1554772148346'>
+                <step start='1554865944271' status='passed' stop='1554865947298'>
                     <name>Object: enterPostalCode </name>
                     <title>Object: enterPostalCode </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772145474' status='passed' stop='1554772145981'>
+                        <step start='1554865944271' status='passed' stop='1554865944797'>
                             <name>I wait for visible "#pickup-section input"</name>
                             <title>I wait for visible "#pickup-section input"</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1554772145981' status='passed' stop='1554772147216'>
+                        <step start='1554865944797' status='passed' stop='1554865946195'>
                             <name>I fill field "#pickup-section input", "M9V3G4"</name>
                             <title>I fill field "#pickup-section input", "M9V3G4"</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1554772147216' status='passed' stop='1554772147686'>
-                            <name>I wait for enabled "#pickup-section button"</name>
-                            <title>I wait for enabled "#pickup-section button"</title>
+                        <step start='1554865946195' status='passed' stop='1554865946668'>
+                            <name>I wait for enabled "#pickup-section button[type='submit']"</name>
+                            <title>I wait for enabled "#pickup-section button[type='submit']"</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1554772147686' status='passed' stop='1554772148346'>
-                            <name>I click "#pickup-section button"</name>
-                            <title>I click "#pickup-section button"</title>
+                        <step start='1554865946668' status='passed' stop='1554865947298'>
+                            <name>I click "#pickup-section button[type='submit']"</name>
+                            <title>I click "#pickup-section button[type='submit']"</title>
                             <attachments/>
                             <steps/>
                         </step>
                     </steps>
                 </step>
-                <step start='1554772148346' status='passed' stop='1554772149468'>
+                <step start='1554865947298' status='passed' stop='1554865948246'>
                     <name>Object: verifyNearestStores </name>
                     <title>Object: verifyNearestStores </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772148346' status='passed' stop='1554772149009'>
+                        <step start='1554865947298' status='passed' stop='1554865947776'>
                             <name>I wait for visible "#pickup-section div[class*='css-1yp4ln']", 5</name>
                             <title>I wait for visible "#pickup-section div[class*='css-1yp4ln']", 5</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1554772149009' status='passed' stop='1554772149468'>
+                        <step start='1554865947777' status='passed' stop='1554865948246'>
                             <name>I see number of visible elements "#pickup-section div[class*='css-1yp4ln']", 3</name>
                             <title>I see number of visible elements "#pickup-section div[class*='css-1yp4ln']", 3</title>
                             <attachments/>
@@ -125,12 +127,12 @@
                         </step>
                     </steps>
                 </step>
-                <step start='1554772149468' status='passed' stop='1554772149949'>
+                <step start='1554865948246' status='passed' stop='1554865948736'>
                     <name>Object: getFirstNearestLocation </name>
                     <title>Object: getFirstNearestLocation </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772149468' status='passed' stop='1554772149948'>
+                        <step start='1554865948246' status='passed' stop='1554865948735'>
                             <name>I grab text from "#pickup-section div[class*='css-1yp4ln'] b"</name>
                             <title>I grab text from "#pickup-section div[class*='css-1yp4ln'] b"</title>
                             <attachments/>
@@ -141,20 +143,22 @@
             </steps>
             <attachments/>
         </test-case>
-        <test-case start='1554772150320' status='passed' stop='1554772165346'>
-            <name>Test Pickup tab | {"skuID":"6000054849496","prTitle":"Conair 1600Watt Compact Size Dual Voltage Travel Folding Handle Hair Dryer"}</name>
-            <title>Test Pickup tab | {"skuID":"6000054849496","prTitle":"Conair 1600Watt Compact Size Dual Voltage Travel Folding Handle Hair Dryer"}</title>
+        <test-case start='1554865949136' status='passed' stop='1554865971991'>
+            <name>Test Pickup tab | {"skuID":"6000054849496","prTitle":"Conair 1600Watt Compact Size Dual Voltage Travel Folding Handle Hair Dryer"} @pickup @pip</name>
+            <title>Test Pickup tab | {"skuID":"6000054849496","prTitle":"Conair 1600Watt Compact Size Dual Voltage Travel Folding Handle Hair Dryer"} @pickup @pip</title>
             <labels>
                 <label name='tag' value='null'/>
+                <label name='tag' value='@pickup'/>
+                <label name='tag' value='@pip'/>
             </labels>
             <parameters/>
             <steps>
-                <step start='1554772152530' status='passed' stop='1554772157309'>
+                <step start='1554865949967' status='passed' stop='1554865964448'>
                     <name>pipPage: open </name>
                     <title>pipPage: open </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772152530' status='passed' stop='1554772157309'>
+                        <step start='1554865949967' status='passed' stop='1554865964447'>
                             <name>I am on page "6000054849496"</name>
                             <title>I am on page "6000054849496"</title>
                             <attachments/>
@@ -162,12 +166,12 @@
                         </step>
                     </steps>
                 </step>
-                <step start='1554772157309' status='passed' stop='1554772157822'>
+                <step start='1554865964448' status='passed' stop='1554865964905'>
                     <name>pipPage: hasLoaded </name>
                     <title>pipPage: hasLoaded </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772157309' status='passed' stop='1554772157822'>
+                        <step start='1554865964448' status='passed' stop='1554865964905'>
                             <name>I wait for visible "[data-automation='buybox-price']"</name>
                             <title>I wait for visible "[data-automation='buybox-price']"</title>
                             <attachments/>
@@ -175,24 +179,24 @@
                         </step>
                     </steps>
                 </step>
-                <step start='1554772157822' status='passed' stop='1554772159271'>
+                <step start='1554865964905' status='passed' stop='1554865966371'>
                     <name>pipPage: verifyCommonElements </name>
                     <title>pipPage: verifyCommonElements </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772157822' status='passed' stop='1554772158290'>
+                        <step start='1554865964905' status='passed' stop='1554865965400'>
                             <name>I wait for visible "[data-automation='product-title']"</name>
                             <title>I wait for visible "[data-automation='product-title']"</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1554772158290' status='passed' stop='1554772158773'>
+                        <step start='1554865965400' status='passed' stop='1554865965871'>
                             <name>I wait for visible "[data-automation='short-description']"</name>
                             <title>I wait for visible "[data-automation='short-description']"</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1554772158773' status='passed' stop='1554772159271'>
+                        <step start='1554865965871' status='passed' stop='1554865966371'>
                             <name>I see "Conair 1600Watt Compact Size Dual Voltage Travel Folding Handle Hair Dryer", {"css":"[data-automation='product-title']"}</name>
                             <title>I see "Conair 1600Watt Compact Size Dual Voltage Travel Folding Handle Hair Dryer", {"css":"[data-automation='product-title']"}</title>
                             <attachments/>
@@ -200,12 +204,12 @@
                         </step>
                     </steps>
                 </step>
-                <step start='1554772159271' status='passed' stop='1554772159996'>
+                <step start='1554865966371' status='passed' stop='1554865967020'>
                     <name>Object: exandPickupTab </name>
                     <title>Object: exandPickupTab </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772159271' status='passed' stop='1554772159996'>
+                        <step start='1554865966371' status='passed' stop='1554865967020'>
                             <name>I click "#pickup-section"</name>
                             <title>I click "#pickup-section"</title>
                             <attachments/>
@@ -213,49 +217,49 @@
                         </step>
                     </steps>
                 </step>
-                <step start='1554772159996' status='passed' stop='1554772163520'>
+                <step start='1554865967020' status='passed' stop='1554865970293'>
                     <name>Object: enterPostalCode </name>
                     <title>Object: enterPostalCode </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772159996' status='passed' stop='1554772161689'>
+                        <step start='1554865967020' status='passed' stop='1554865968454'>
                             <name>I wait for visible "#pickup-section input"</name>
                             <title>I wait for visible "#pickup-section input"</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1554772161689' status='passed' stop='1554772162425'>
+                        <step start='1554865968454' status='passed' stop='1554865969215'>
                             <name>I fill field "#pickup-section input", "M9V3G4"</name>
                             <title>I fill field "#pickup-section input", "M9V3G4"</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1554772162425' status='passed' stop='1554772162911'>
-                            <name>I wait for enabled "#pickup-section button"</name>
-                            <title>I wait for enabled "#pickup-section button"</title>
+                        <step start='1554865969215' status='passed' stop='1554865969667'>
+                            <name>I wait for enabled "#pickup-section button[type='submit']"</name>
+                            <title>I wait for enabled "#pickup-section button[type='submit']"</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1554772162911' status='passed' stop='1554772163520'>
-                            <name>I click "#pickup-section button"</name>
-                            <title>I click "#pickup-section button"</title>
+                        <step start='1554865969667' status='passed' stop='1554865970292'>
+                            <name>I click "#pickup-section button[type='submit']"</name>
+                            <title>I click "#pickup-section button[type='submit']"</title>
                             <attachments/>
                             <steps/>
                         </step>
                     </steps>
                 </step>
-                <step start='1554772163520' status='passed' stop='1554772164842'>
+                <step start='1554865970293' status='passed' stop='1554865971524'>
                     <name>Object: verifyNearestStores </name>
                     <title>Object: verifyNearestStores </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772163520' status='passed' stop='1554772164344'>
+                        <step start='1554865970293' status='passed' stop='1554865971087'>
                             <name>I wait for visible "#pickup-section div[class*='css-1yp4ln']", 5</name>
                             <title>I wait for visible "#pickup-section div[class*='css-1yp4ln']", 5</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1554772164344' status='passed' stop='1554772164842'>
+                        <step start='1554865971087' status='passed' stop='1554865971523'>
                             <name>I see number of visible elements "#pickup-section div[class*='css-1yp4ln']", 3</name>
                             <title>I see number of visible elements "#pickup-section div[class*='css-1yp4ln']", 3</title>
                             <attachments/>
@@ -263,12 +267,12 @@
                         </step>
                     </steps>
                 </step>
-                <step start='1554772164842' status='passed' stop='1554772165346'>
+                <step start='1554865971524' status='passed' stop='1554865971991'>
                     <name>Object: getFirstNearestLocation </name>
                     <title>Object: getFirstNearestLocation </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772164842' status='passed' stop='1554772165346'>
+                        <step start='1554865971524' status='passed' stop='1554865971991'>
                             <name>I grab text from "#pickup-section div[class*='css-1yp4ln'] b"</name>
                             <title>I grab text from "#pickup-section div[class*='css-1yp4ln'] b"</title>
                             <attachments/>
@@ -279,20 +283,22 @@
             </steps>
             <attachments/>
         </test-case>
-        <test-case start='1554772165721' status='passed' stop='1554772179491'>
-            <name>Test Pickup tab | {"skuID":"6000193213529","prTitle":"Weider Treadmill Cleaning Accessory Kit"}</name>
-            <title>Test Pickup tab | {"skuID":"6000193213529","prTitle":"Weider Treadmill Cleaning Accessory Kit"}</title>
+        <test-case start='1554865972665' status='passed' stop='1554865997542'>
+            <name>Test Pickup tab | {"skuID":"6000193213529","prTitle":"Weider Treadmill Cleaning Accessory Kit"} @pickup @pip</name>
+            <title>Test Pickup tab | {"skuID":"6000193213529","prTitle":"Weider Treadmill Cleaning Accessory Kit"} @pickup @pip</title>
             <labels>
                 <label name='tag' value='null'/>
+                <label name='tag' value='@pickup'/>
+                <label name='tag' value='@pip'/>
             </labels>
             <parameters/>
             <steps>
-                <step start='1554772167294' status='passed' stop='1554772172647'>
+                <step start='1554865973562' status='passed' stop='1554865990356'>
                     <name>pipPage: open </name>
                     <title>pipPage: open </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772167294' status='passed' stop='1554772172647'>
+                        <step start='1554865973562' status='passed' stop='1554865990356'>
                             <name>I am on page "6000193213529"</name>
                             <title>I am on page "6000193213529"</title>
                             <attachments/>
@@ -300,12 +306,12 @@
                         </step>
                     </steps>
                 </step>
-                <step start='1554772172647' status='passed' stop='1554772173144'>
+                <step start='1554865990356' status='passed' stop='1554865990826'>
                     <name>pipPage: hasLoaded </name>
                     <title>pipPage: hasLoaded </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772172647' status='passed' stop='1554772173144'>
+                        <step start='1554865990356' status='passed' stop='1554865990826'>
                             <name>I wait for visible "[data-automation='buybox-price']"</name>
                             <title>I wait for visible "[data-automation='buybox-price']"</title>
                             <attachments/>
@@ -313,24 +319,24 @@
                         </step>
                     </steps>
                 </step>
-                <step start='1554772173144' status='passed' stop='1554772174614'>
+                <step start='1554865990826' status='passed' stop='1554865992272'>
                     <name>pipPage: verifyCommonElements </name>
                     <title>pipPage: verifyCommonElements </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772173144' status='passed' stop='1554772173658'>
+                        <step start='1554865990826' status='passed' stop='1554865991311'>
                             <name>I wait for visible "[data-automation='product-title']"</name>
                             <title>I wait for visible "[data-automation='product-title']"</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1554772173658' status='passed' stop='1554772174127'>
+                        <step start='1554865991311' status='passed' stop='1554865991798'>
                             <name>I wait for visible "[data-automation='short-description']"</name>
                             <title>I wait for visible "[data-automation='short-description']"</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1554772174127' status='passed' stop='1554772174614'>
+                        <step start='1554865991798' status='passed' stop='1554865992272'>
                             <name>I see "Weider Treadmill Cleaning Accessory Kit", {"css":"[data-automation='product-title']"}</name>
                             <title>I see "Weider Treadmill Cleaning Accessory Kit", {"css":"[data-automation='product-title']"}</title>
                             <attachments/>
@@ -338,12 +344,12 @@
                         </step>
                     </steps>
                 </step>
-                <step start='1554772174614' status='passed' stop='1554772175230'>
+                <step start='1554865992272' status='passed' stop='1554865992899'>
                     <name>Object: exandPickupTab </name>
                     <title>Object: exandPickupTab </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772174614' status='passed' stop='1554772175230'>
+                        <step start='1554865992272' status='passed' stop='1554865992899'>
                             <name>I click "#pickup-section"</name>
                             <title>I click "#pickup-section"</title>
                             <attachments/>
@@ -351,49 +357,49 @@
                         </step>
                     </steps>
                 </step>
-                <step start='1554772175230' status='passed' stop='1554772177885'>
+                <step start='1554865992899' status='passed' stop='1554865995760'>
                     <name>Object: enterPostalCode </name>
                     <title>Object: enterPostalCode </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772175231' status='passed' stop='1554772175752'>
+                        <step start='1554865992899' status='passed' stop='1554865993457'>
                             <name>I wait for visible "#pickup-section input"</name>
                             <title>I wait for visible "#pickup-section input"</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1554772175752' status='passed' stop='1554772176731'>
+                        <step start='1554865993457' status='passed' stop='1554865994525'>
                             <name>I fill field "#pickup-section input", "M9V3G4"</name>
                             <title>I fill field "#pickup-section input", "M9V3G4"</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1554772176731' status='passed' stop='1554772177172'>
-                            <name>I wait for enabled "#pickup-section button"</name>
-                            <title>I wait for enabled "#pickup-section button"</title>
+                        <step start='1554865994525' status='passed' stop='1554865994995'>
+                            <name>I wait for enabled "#pickup-section button[type='submit']"</name>
+                            <title>I wait for enabled "#pickup-section button[type='submit']"</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1554772177172' status='passed' stop='1554772177885'>
-                            <name>I click "#pickup-section button"</name>
-                            <title>I click "#pickup-section button"</title>
+                        <step start='1554865994995' status='passed' stop='1554865995760'>
+                            <name>I click "#pickup-section button[type='submit']"</name>
+                            <title>I click "#pickup-section button[type='submit']"</title>
                             <attachments/>
                             <steps/>
                         </step>
                     </steps>
                 </step>
-                <step start='1554772177885' status='passed' stop='1554772179013'>
+                <step start='1554865995760' status='passed' stop='1554865997069'>
                     <name>Object: verifyNearestStores </name>
                     <title>Object: verifyNearestStores </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772177885' status='passed' stop='1554772178558'>
+                        <step start='1554865995760' status='passed' stop='1554865996609'>
                             <name>I wait for visible "#pickup-section div[class*='css-1yp4ln']", 5</name>
                             <title>I wait for visible "#pickup-section div[class*='css-1yp4ln']", 5</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1554772178558' status='passed' stop='1554772179013'>
+                        <step start='1554865996609' status='passed' stop='1554865997069'>
                             <name>I see number of visible elements "#pickup-section div[class*='css-1yp4ln']", 3</name>
                             <title>I see number of visible elements "#pickup-section div[class*='css-1yp4ln']", 3</title>
                             <attachments/>
@@ -401,14 +407,147 @@
                         </step>
                     </steps>
                 </step>
-                <step start='1554772179013' status='passed' stop='1554772179491'>
+                <step start='1554865997069' status='passed' stop='1554865997542'>
                     <name>Object: getFirstNearestLocation </name>
                     <title>Object: getFirstNearestLocation </title>
                     <attachments/>
                     <steps>
-                        <step start='1554772179013' status='passed' stop='1554772179491'>
+                        <step start='1554865997069' status='passed' stop='1554865997542'>
                             <name>I grab text from "#pickup-section div[class*='css-1yp4ln'] b"</name>
                             <title>I grab text from "#pickup-section div[class*='css-1yp4ln'] b"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1554865997971' status='passed' stop='1554866018789'>
+            <name>Test Shipping fees @shipping @pip</name>
+            <title>Test Shipping fees @shipping @pip</title>
+            <labels>
+                <label name='tag' value='null'/>
+                <label name='tag' value='@shipping'/>
+                <label name='tag' value='@pip'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1554866000594' status='passed' stop='1554866012104'>
+                    <name>pipPage: open </name>
+                    <title>pipPage: open </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554866000594' status='passed' stop='1554866012104'>
+                            <name>I am on page "conair-1875w-mid-size-hair-dryer/6000198160418"</name>
+                            <title>I am on page "conair-1875w-mid-size-hair-dryer/6000198160418"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554866012104' status='passed' stop='1554866012564'>
+                    <name>pipPage: hasLoaded </name>
+                    <title>pipPage: hasLoaded </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554866012104' status='passed' stop='1554866012564'>
+                            <name>I wait for visible "[data-automation='buybox-price']"</name>
+                            <title>I wait for visible "[data-automation='buybox-price']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554866012564' status='passed' stop='1554866013992'>
+                    <name>pipPage: verifyCommonElements </name>
+                    <title>pipPage: verifyCommonElements </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554866012564' status='passed' stop='1554866013056'>
+                            <name>I wait for visible "[data-automation='product-title']"</name>
+                            <title>I wait for visible "[data-automation='product-title']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554866013056' status='passed' stop='1554866013526'>
+                            <name>I wait for visible "[data-automation='short-description']"</name>
+                            <title>I wait for visible "[data-automation='short-description']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554866013526' status='passed' stop='1554866013992'>
+                            <name>I see "Conair 1875W Mid Size Hair Dryer", {"css":"[data-automation='product-title']"}</name>
+                            <title>I see "Conair 1875W Mid Size Hair Dryer", {"css":"[data-automation='product-title']"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554866013992' status='passed' stop='1554866014637'>
+                    <name>Object: exandShippingTab </name>
+                    <title>Object: exandShippingTab </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554866013992' status='passed' stop='1554866014637'>
+                            <name>I click "#shipping-section"</name>
+                            <title>I click "#shipping-section"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554866014637' status='passed' stop='1554866017368'>
+                    <name>Object: enterPostalCode </name>
+                    <title>Object: enterPostalCode </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554866014637' status='passed' stop='1554866015130'>
+                            <name>I wait for visible "#shipping-section input"</name>
+                            <title>I wait for visible "#shipping-section input"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554866015130' status='passed' stop='1554866016285'>
+                            <name>I fill field "#shipping-section input", "M9V3G4"</name>
+                            <title>I fill field "#shipping-section input", "M9V3G4"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554866016285' status='passed' stop='1554866016743'>
+                            <name>I wait for enabled "#shipping-section button[type='submit']"</name>
+                            <title>I wait for enabled "#shipping-section button[type='submit']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554866016743' status='passed' stop='1554866017368'>
+                            <name>I click "#shipping-section button[type='submit']"</name>
+                            <title>I click "#shipping-section button[type='submit']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1554866017368' status='passed' stop='1554866018789'>
+                    <name>Object: verifyShippingFees </name>
+                    <title>Object: verifyShippingFees </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1554866017368' status='passed' stop='1554866017856'>
+                            <name>I wait for visible "#shipping-section [class*='css-1y3tu5o']"</name>
+                            <title>I wait for visible "#shipping-section [class*='css-1y3tu5o']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554866017856' status='passed' stop='1554866018331'>
+                            <name>I see "STANDARD", {"css":"#shipping-section [class*='css-1y3tu5o']"}</name>
+                            <title>I see "STANDARD", {"css":"#shipping-section [class*='css-1y3tu5o']"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1554866018331' status='passed' stop='1554866018789'>
+                            <name>I see "$5.97", {"css":"#shipping-section [class*='css-1movlma']"}</name>
+                            <title>I see "$5.97", {"css":"#shipping-section [class*='css-1movlma']"}</title>
                             <attachments/>
                             <steps/>
                         </step>
