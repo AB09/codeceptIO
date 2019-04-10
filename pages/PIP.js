@@ -1,6 +1,7 @@
 const I = actor();
 const header = require('./gmHeader');
 const Objfullfilment = require('./fulfillment');
+const ObjvariantModal = require('./variantModal');
 const data = require('../testdata/data');
 const chai = require('chai');  
 const assert = chai.assert; 
@@ -27,7 +28,10 @@ module.exports = {
 
   itemAddedModal: "#modal-root",
   continueShoppingBtn: "[data-automation='continue-shopping']",
+  
+  //page fragments - subsection of page
   fulfillmentModal: Objfullfilment,
+  productVariant: ObjvariantModal,
 
   open(skuId='conair-1875w-mid-size-hair-dryer/6000198160418') {
   	I.amOnPage(skuId);
@@ -62,5 +66,15 @@ module.exports = {
   		 I.click(this.qtyIncreaseBtn);
   	}
   },
+
+  async addUnavailableVariantItem() {
+    this.productVariant.addUnavailableVariant();
+    I.dontSeeElement(locate(this.cta.addToCart).withText('Add to cart'));
+  },
+
+  async addAvailableVariantItem() {
+    this.productVariant.addAvailableVariant();
+    this.addItemToCart();
+  }
 
 }
