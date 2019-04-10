@@ -14,13 +14,13 @@ exports.config = {
   },
   plugins: {
     allure: {
-      enabled:false,
+      enabled:true,
       outputDir: './output/reports/allure/',
     },
     stepByStepReport: {
      enabled: false,
      deleteSuccessful:false,
-     output:'./output/reports/slideshow/',
+     //output:'./output/reports',
    }
   },
   multiple: {
